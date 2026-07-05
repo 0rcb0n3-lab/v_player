@@ -9,6 +9,9 @@
       width: 800px;
       height: 600px;
     }
+    .player--shadow {
+      box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.5);
+    }
     .video-container {
       width: 100%;
       height: 100%;
@@ -31,7 +34,7 @@
   </style>
   </head>
   <body>
-    <div id="player" class="player">
+    <div id="player" class="player player--shadow">
       <div class="js-video-container video-container"></div>
       <div class="controls">
         <button class="js-play-button control-btn" aria-label="Play"><i class="fa fa-play" aria-hidden="true"></i>
