@@ -47,6 +47,15 @@
   line-height: 1;
 }
 
+.player-button:focus {
+  outline: none;
+}
+
+.player-button:focus-visible {
+  outline: 2px solid white;
+  outline-offset: -2px;
+}
+
 .player-button[hidden] {
   display: none !important;
 }
