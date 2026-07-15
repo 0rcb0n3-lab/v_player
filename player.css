@@ -68,22 +68,19 @@
   color: white;
   font-size: 16px;
   white-space: nowrap;
-  margin-right: 15px;
 }
 
-.viewing-progressbar {
-  flex-grow: 1;
-  height: 5px;
-  background-color: #555;
-  cursor: pointer;
-  border-radius: 3px;
-  position: relative;
+.js-current-time {
+  margin-right: 9px;
+}
+.js-duration {
+  margin-left: 9px;
 }
 
 .video-duration {
   width: 0%;
   height: 100%;
-  background-color: white;
+  background-color: red;
   border-radius: 3px;
   transition: width 0.1s linear;
 }
@@ -91,4 +88,37 @@
 .viewing-panel .js-duration {
   margin-left: 15px;
   margin-right: 0;
+}
+
+.viewing-progressbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+  position: relative;
+  flex-grow: 1;
+  height: 5px;
+  background-color: transparent;
+  cursor:
+}
+
+.video-duration {
+  height: 100%;
+  background-color: red;
+  border-radius: 3px 0 0 3px;
+  flex-shrink : 0;
+}
+
+.progress-handle {
+  width: 14px;
+  height: 14px;
+  background-color: red;
+  border: 3px solid white;
+  box-sizing: border-box;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+  margin-left: -6px;
+  flex-shrink: 0;
+  z-index: 10;
 }
