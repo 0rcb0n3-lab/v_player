@@ -11,34 +11,58 @@
       height: 600px;
       display:flex;
       flex-direction:column;
+      background-color:black;
     }
     .player--shadow {
-      box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
     }
     .video-container {
       flex-grow :1;
     }
     .controls {
       background-color: black;
-      flex: 0 0 auto;
       display:flex;
       align-items:center;
+      justify-content:center;
+      box-sizing:border-box;
+      padding-bottom: 8px;
     }
     .controls-expand{
       flex-grow: 1;
     }
     .control-btn {
-      width: 44px;
-      height: 44px;
+      width: 28px;
+      height: 28px;
+      display: flex;
       align-items: center;
-      justify-content: center;
+
       border: none;
       cursor: pointer;
       color: white;
       background-color: transparent;
       font-size: 18px;
-      margin-bottom: 2px;
-      margin-right: 4px;
+      padding: 10px;
+      line-height:1;
+    }
+
+    .js-play-button,
+    .js-pause-button,
+    .js-volume-button,
+    .js-mute-button {
+    justify-content: flex-start;
+    padding-left: 10px;
+    }
+    .js-volume-button,
+    .js-mute-button {
+    margin-left: 8px;
+
+    }
+    .js-fullscreen-button {
+    justify-content: flex-end;
+    padding-right: 10px;
+    }
+    .control-btn[hidden] {
+    display: none !important;
     }
     </style>
   </head>
