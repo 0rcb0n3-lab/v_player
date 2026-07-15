@@ -121,4 +121,11 @@
   margin-left: -6px;
   flex-shrink: 0;
   z-index: 10;
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+
+.viewing-progressbar:hover .progress-handle {
+  opacity: 1;
+  transition-timing-function: ease-out;
 }
