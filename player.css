@@ -30,6 +30,7 @@
   display:flex;
   align-items: center;
   margin: 0 6px;
+  column-gap: 10px;
 }
 
 .player-button {
@@ -60,16 +61,11 @@
   display: none !important;
 }
 
-.js-play-button,
-.js-pause-button,
-.js-volume-button,
-.js-mute-button,
-.js-fullscreen-button {
+.player-button {
   margin: 0;
 }
 
-.js-volume-button,
-.js-mute-button {
+.player-button-volume {
   margin-left: 9px;
 }
 
@@ -79,24 +75,12 @@
   white-space: nowrap;
 }
 
-.js-current-time {
-  margin-right: 9px;
-}
-.js-duration {
-  margin-left: 9px;
-}
-
 .video-duration {
   width: 0%;
   height: 100%;
   background-color: red;
   border-radius: 3px;
   transition: width 0.1s linear;
-}
-
-.viewing-panel .js-duration {
-  margin-left: 15px;
-  margin-right: 0;
 }
 
 .viewing-progressbar {
@@ -109,7 +93,6 @@
   flex-grow: 1;
   height: 5px;
   background-color: transparent;
-  cursor:
 }
 
 .video-duration {
